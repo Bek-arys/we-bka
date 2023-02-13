@@ -1,0 +1,221 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 23px;
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 29px;
+    top: 157px;
+
+    background: #FF9494;
+    border-radius: 100px 100px 100px 0px;
+}
+
+.circle p {
+    position: absolute;
+    width: 167px;
+    height: 46px;
+    left: 17px;
+    top: 77px;
+
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.citate {
+    position: absolute;
+    width: 893px;
+    height: 155px;
+    left: 29px;
+    top: 373px;
+
+    background: #3F3F3F;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.citate h2 {
+    position: absolute;
+    width: 264px;
+    height: 43px;
+    left: 315px;
+    top: 17px;
+    font-size: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.citate p:first-of-type {
+    position: absolute;
+    width: 394px;
+    height: 18px;
+    left: 250px;
+    top: 73px;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.citate p:last-of-type {
+    position: absolute;
+    width: 232px;
+    height: 18px;
+    left: 330px;
+    top: 115px;
+    font-size: 16px;
+    line-height: 18px;
+    
+    color: #A9F0FF;
+}
+
+.song {
+    position: absolute;
+    width: 480px;
+    height: 897px;
+    left: 235px;
+    top: 556px;
+
+    background: #F2F2F2;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.song h2 {
+    position: absolute;
+    width: 157px;
+    height: 40px;
+    left: 162px;
+    top: 25px;
+    
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.song p {
+    position: absolute;
+    width: 417px;
+    height: 783px;
+    left: 31px;
+    top: 82px;
+    
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #000000;
+}
+
+.some-text {
+    position: absolute;
+    width: 649px;
+    height: 207px;
+    left: 151px;
+    top: 1505px;
+    
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.ertegi h1 {
+    position: absolute;
+    width: 683px;
+    height: 37px;
+    left: 31px;
+    top: 1782px;
+    
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.ertegi p {
+    position: absolute;
+    width: 903px;
+    height: 792px;
+    left: 31px;
+    top: 1853px;
+
+    font-size: 30px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+.buton-1 {
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    left: 31px;
+    top: 2694px;
+    
+    background: #00C2FF;
+    border-radius: 10px;
+}
+
+.buton-2 {
+    position: absolute;
+    width: 329px;
+    height: 60px;
+    left: 31px;
+    top: 2772px;
+    
+    background: #EA6329;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+}
+
+.buton-1 p {
+    position: absolute;
+    left: 37px;
+    top: 0px;
+
+    font-size: 20px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.buton-2 p {
+    position: absolute;
+    left: 94px;
+    top: 0px;    
+    font-size: 20px;
+    line-height: 23px;
+
+    text-align: center;
+    
+    color: #FFFFFF;
+}

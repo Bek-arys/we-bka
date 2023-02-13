@@ -1,0 +1,53 @@
+body {
+    font-size: 20px;
+}
+
+.zhurek {
+    border-radius: 50% 50% 50% 0%;
+    margin-top: 44px;
+    background-color:#FF9494;
+    width: 200px;
+    height: 130px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.quote {
+    background-color:#3F3F3F;
+    color: #fff;
+    border-radius: 0px 20px 20px 20px;
+    width: 100%;
+    height: 155px;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+.title {
+    display: block;
+    color: #fff;
+    font-size: 37px;
+    margin: 17px 0 13px;
+}
+
+.aqua {
+    display: block;
+    margin: 22px 0;
+    color: #a9f0ff;
+}
+
+.song {
+    text-align: center;
+    background-color: #F2F2F2;
+    width: 480px;
+    height: 897px;
+    margin: 28px auto;
+    padding-top: 25px;
+}
+
+.song-title {
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 35px;
+}

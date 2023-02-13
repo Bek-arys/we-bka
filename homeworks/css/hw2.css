@@ -1,0 +1,161 @@
+body {
+    width: 1728px;
+    height: 2613px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    height: 1500px;
+}
+
+header, .card, .sticky-container, footer {
+    background-color: #f4f4f4;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+header div {
+    width: fit-content;
+    display: inline-block;
+}
+
+header div:first-child {
+    position: relative;
+    top: 26px;
+    left: 76px;
+    right: 74px;
+}
+
+header div:nth-child(2) {
+    position: absolute;
+    top: 26px;
+    right: 80px;
+}
+
+.card, .sticky-container, a {
+    border-radius: 10px;
+}
+
+.content-wrapper {
+    height: 1200px;
+    width: 1578px;
+    position: relative;
+    top: 141px;
+    left: 76px;
+}
+
+.cards-wrapper {
+    display: inline-block;
+}
+
+.card {
+    text-align: left;
+    width: 274px;
+    height: 380px;
+    margin-bottom: 30px;
+}
+
+.card > * {
+    position: relative;
+}
+
+.card-title {
+    width: 201px;
+    top: 13px;
+    left: 24px;
+    font-size: 32px;
+}
+
+.card-data {
+    width: 230px;
+    height: 224px;
+    left: 25px;
+    top: 48px;
+}
+
+.close {
+    display: inline-block;
+    font-size: 18px;
+    top: 13px;
+    left: 216px;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 80px;
+    width: 1200px;
+    height: 380px;
+    float: right;
+}
+
+.sticky-container div {
+    position: relative;
+    top: 27px;
+    left: 27px;
+}
+
+.line {
+    border: 1px solid #DCDCDC;
+    margin-top: 73px;
+}
+
+.shock-content-wrapper {
+    margin: 300px 80px 60px 76px;
+    padding-left: 21px;
+    position: relative;
+    width: 1572px;
+    height: 591px;
+}
+
+.shock-header {
+    font-size: 60px;
+    text-align: center;
+}
+
+.shock-content {
+    font-size: 40px;
+    width: fit-content;
+}
+
+.more-shock-info {
+    margin-top: 109px;
+    font-size: 18px;
+}
+
+a {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    padding: 19px 48px;
+    font-size: 32px;
+    background-color: #3455FF;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    height: 471px;
+    padding-left: 103px;
+}
+
+footer > * {
+    position: relative;
+}
+
+.authors {
+    top: 77px;
+}
+
+.only-for {
+    top: 110px;
+}
+
+footer div:last-child {
+    top: 362px;
+}
+
