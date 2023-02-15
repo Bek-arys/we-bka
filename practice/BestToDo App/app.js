@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function() {
         taskName.value = "";
 
         const delBtn = document.createElement('img');
-        delBtn.setAttribute('src', '/BestToDo\ App/assets/icons/rubbish-bin-icon.svg');
+        delBtn.setAttribute('src', '/assets/icons/rubbish-bin-icon.svg');
         delBtn.setAttribute('alt', 'delete');
         delBtn.setAttribute('id', `delete-${id}`);
         delBtn.setAttribute('onClick', `removeTask(${id})`);
