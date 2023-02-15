@@ -1,0 +1,46 @@
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    max-height: fit-content;
+    min-height: 60px;
+    opacity: 1;
+    transition: all 0.7s ease-out;
+}
+
+.task-wrapper p {
+    max-width: 960px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.task-wrapper img {
+    width: 30px;
+    object-fit: cover;
+    margin-right: 30px;
+    background-color: #ff6e6e;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+}
+
+.task-wrapper img:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.cross {
+    text-decoration: line-through;
+}
+
+.fade-out {
+    transform: translateX(500px);
+    opacity: 0;
+}
