@@ -87,7 +87,7 @@ header div:nth-child(2) {
 
 .sticky-container {
     position: sticky;
-    top: 80px;
+    top: 100px;
     width: 1200px;
     height: 380px;
     float: right;
