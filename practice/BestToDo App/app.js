@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function() {
         taskName.value = "";
 
         const delBtn = document.createElement('img');
-        delBtn.setAttribute('src', '/assets/icons/rubbish-bin-icon.svg');
+        delBtn.setAttribute('src', 'assets/icons/rubbish-bin-icon.svg');
         delBtn.setAttribute('alt', 'delete');
         delBtn.setAttribute('id', `delete-${id}`);
         delBtn.setAttribute('onClick', `removeTask(${id})`);
@@ -45,6 +45,7 @@ window.addEventListener('DOMContentLoaded', function() {
 function completeTask(id) {
     const div = document.querySelector(`.task-wrapper[task-id="${id}"]`);
     div.classList.toggle('cross');
+    filtering();
 }
 
 function removeTask(id) {
@@ -53,4 +54,16 @@ function removeTask(id) {
     div.addEventListener('transitionend', function () {
         div.remove();
     });
+}
+
+function filtering() {
+    let el = Array.from(document.querySelector('.task-list-wrapper').children);
+    const comp = document.querySelector('.completed');
+
+    for (let i = 0; i < el.length; i++) {
+        if (el[i].classList.contains('cross')) {
+            comp.append(el[i]);
+            el.splice(i, 1);
+        }
+    }
 }

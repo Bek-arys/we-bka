@@ -76,13 +76,23 @@ button#add:hover {
     opacity: 1;
 }
 
-.task-list-wrapper {
+.task-list-wrapper, .completed {
+    border-radius: 3px;
     background-color: #F7F7F7;
     padding: 20px 50px;
     min-width: 410px;
     width: 60%;
     min-height: 100px;
-    margin: 0 auto;
+    margin: 30px auto;
+}
+
+.task-list-wrapper span, .completed span {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.completed {
+    background-color: #02d6fb;
 }
 
 @media (min-width: 210px) {
