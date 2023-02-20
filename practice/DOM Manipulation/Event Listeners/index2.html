@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: tahoma;
+            background: linear-gradient(to top, #3C4E5D, #1A242A);
+            padding-inline: 200px;
+            color: #fff;
+        }
+
+        #main-heading {
+            margin-block: 50px;
+            text-align: center;
+            font-size: 3.4em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            min-width: 1000px;
+            margin: 0 auto;
+            min-height: 300px;
+        }
+
+        .container > * {
+            border: 2px solid #fff;
+            border-radius: 10px;
+            height: 300px;
+        }
+
+        .boxes {
+            padding: 30px;
+        }
+
+        .hidden-content {
+            max-width: 835px;
+            font-size: 24px;
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+
+        button {
+            min-width: 1000px;
+            background: none;
+            color: #fff;
+        }
+
+        .width-compress {
+            min-width: 100px;
+        }
+    </style>   
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+        <div class="hidden-content boxes">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ducimus accusantium nulla? Ipsa ducimus veritatis maxime et suscipit voluptates sint sed culpa, pariatur ut dolore eius id optio quasi velit.
+        </div>
+
+    </div>
+
+    <script>
+        const revealBtn = document.querySelector('.reveal-btn');
+
+        const hiddenContent = document.querySelector('.hidden-content');
+
+        function revealContent() {
+
+            if (hiddenContent.classList.contains('reveal-btn')) {
+                hiddenContent.classList.remove('reveal-btn');
+                revealBtn.classList.remove('width-compress');
+            } else {
+                hiddenContent.classList.add('reveal-btn');
+                revealBtn.classList.add('width-compress');
+            }
+        }
+
+        revealBtn.addEventListener('click', revealContent);
+    </script>
+</body>
+</html>

@@ -1,52 +1,50 @@
-body {
-    width: 1728px;
-    height: 2613px;
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    height: 1500px;
+    box-sizing: border-box;
 }
 
-header, .card, .sticky-container, footer {
-    background-color: #f4f4f4;
-}
-
-header{
+header {
     position: fixed;
+    top: 0;
+    z-index: 2;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-left: 80px;
     width: 100%;
+    min-width: 800px;
     height: 80px;
-    z-index: 1;
+    background-color: rgba(244, 244, 244, 0.8);
+    backdrop-filter: blur(6px);
 }
 
-header div {
-    width: fit-content;
-    display: inline-block;
+main {
+    margin-top: 80px;
+    padding-inline: 80px;
 }
 
-header div:first-child {
+.container {
+    padding-top: 60px;
     position: relative;
-    top: 26px;
-    left: 76px;
-    right: 74px;
 }
 
-header div:nth-child(2) {
+.right {
     position: absolute;
-    top: 26px;
     right: 80px;
 }
 
-.card, .sticky-container, a {
-    border-radius: 10px;
-}
-
-.content-wrapper {
-    height: 1200px;
-    width: 1578px;
-    position: relative;
-    top: 141px;
-    left: 76px;
+.sticky-container {
+    position: sticky;
+    top: 110px;
+    right: 0;
+    margin-left: 100px;
+    width: calc(100% - 275px - 103px);
+    height: 380px;
+    background-color: #f4f4f4;
+    float: right;
+    padding: 20px;
+    font-size: 24px;
+    min-width: 300px;
 }
 
 .cards-wrapper {
@@ -54,108 +52,92 @@ header div:nth-child(2) {
 }
 
 .card {
-    text-align: left;
-    width: 274px;
     height: 380px;
+    /* min-height: 380px; */
+    max-height: 600px;
+    width: 275px;
     margin-bottom: 30px;
+    background-color: #f4f4f4;
+    font-size: 24px;
+    padding: 15px 20px;
+    /* overflow: auto; */
 }
 
-.card > * {
-    position: relative;
+.card:last-of-type {
+    margin-bottom: 0;
 }
 
-.card-title {
-    width: 201px;
-    top: 13px;
-    left: 24px;
-    font-size: 32px;
+.card span {
+    display: block;
 }
 
-.card-data {
-    width: 230px;
-    height: 224px;
-    left: 25px;
-    top: 48px;
-}
-
-.close {
-    display: inline-block;
+.card span:first-child {
+    text-align: right;
     font-size: 18px;
-    top: 13px;
-    left: 216px;
 }
 
-.sticky-container {
-    position: sticky;
-    top: 100px;
-    width: 1200px;
-    height: 380px;
-    float: right;
-}
-
-.sticky-container div {
-    position: relative;
-    top: 27px;
-    left: 27px;
+.card__title {
+    font-size: 32px;
+    margin-bottom: 33px;
+    max-width: 225px;
 }
 
 .line {
     border: 1px solid #DCDCDC;
-    margin-top: 73px;
+    margin-block: 73px;
 }
 
-.shock-content-wrapper {
-    margin: 300px 80px 60px 76px;
+.shock {
     padding-left: 21px;
-    position: relative;
-    width: 1572px;
-    height: 591px;
+    padding-bottom: 60px;
+    font-size: 40px;
 }
 
-.shock-header {
+.shock__header {
     font-size: 60px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.shock-content {
-    font-size: 40px;
-    width: fit-content;
-}
-
-.more-shock-info {
-    margin-top: 109px;
+.shock__info {
+    margin-block: 109px 15px;
     font-size: 18px;
 }
 
-a {
-    position: absolute;
-    bottom: 0;
+.shock a {
     text-decoration: none;
-    padding: 19px 48px;
-    font-size: 32px;
-    background-color: #3455FF;
     color: #fff;
-    border: none;
+    padding: 19px 48px;
+    background-color: #3455FF;
+    display: block;
+    max-width: 250px;
+    font-size: 32px;
+}
+
+.shock a, .card, .sticky-container {
+    border-radius: 10px;
 }
 
 footer {
-    height: 471px;
-    padding-left: 103px;
+    padding: 80px;
+    width: 100%;
+    background-color: #f4f4f4;
 }
 
-footer > * {
-    position: relative;
+.footer__data {
+    padding-inline: 20px;
+    font-size: 24px;
 }
 
-.authors {
-    top: 77px;
+.footer__data span {
+    display: block;
 }
 
-.only-for {
-    top: 110px;
+.footer__data span:nth-child(2) {
+    margin-top: 35px;
 }
 
-footer div:last-child {
-    top: 362px;
+.footer__data span:last-child {
+    font-size: 16px;
+    margin-top: 250px;
 }
-
