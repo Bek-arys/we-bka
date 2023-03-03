@@ -1,0 +1,4 @@
+ng new <project-name> -> creates new angular project in the current directory
+
+ng new <project-name> <path> -> creates new angular project in a specified directory
+
