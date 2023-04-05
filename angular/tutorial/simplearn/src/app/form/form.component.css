@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert {
+    color: white;
+    margin-top: 15px;
+    text-align: left;
+}
